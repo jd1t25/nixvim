@@ -38,12 +38,6 @@
           desc = "Command History";
         };
       };
-      "<leader>b" = {
-        action = "buffers, {}";
-        options = {
-          desc = "+buffer";
-        };
-      };
       "<leader>ff" = {
         action = "find_files, {}";
         options = {
@@ -98,7 +92,7 @@
           desc = "Auto Commands";
         };
       };
-      "<leader>sb" = {
+      "<leader>fc" = {
         action = "current_buffer_fuzzy_find, {}";
         options = {
           desc = "Buffer";
@@ -116,7 +110,7 @@
           desc = "Commands";
         };
       };
-      "<leader>sD" = {
+      "<leader>fd" = {
         action = "diagnostics, {}";
         options = {
           desc = "Workspace diagnostics";
@@ -134,7 +128,7 @@
           desc = "Search Highlight Groups";
         };
       };
-      "<leader>sk" = {
+      "<leader>fk" = {
         action = "keymaps, {}";
         options = {
           desc = "Keymaps";
@@ -200,6 +194,19 @@
   ];
   extraConfigLua = ''
     require("telescope").setup{
+            defaults = {
+        mappings = {
+          i = {
+            -- ["<C-u>"] = false,
+            -- ["<C-d>"] = false,
+            ['<C-h>'] = 'which_key',
+            ['JK'] = 'close',
+          },
+          n = {
+            ['JK'] = 'close',
+          },
+        },
+      },
       pickers = {
         colorscheme = {
           enable_preview = true

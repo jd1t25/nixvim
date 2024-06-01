@@ -12,7 +12,8 @@
           maxViewEntries = 30;
         };
         snippet = {expand = "luasnip";};
-        formatting = {fields = ["kind" "abbr" "menu"];};
+        #formatting = {fields = ["kind" "abbr" "menu"];};
+        formatting = {fields = ["kind" "menu" "abbr"];};
         sources = [
           {name = "nvim_lsp";}
           {name = "emoji";}

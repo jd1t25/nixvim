@@ -38,7 +38,7 @@
     {
       mode = "o";
       key = "r";
-      action = "<cmd>lua require('flash').remote()<cr>";
+      fction = "<cmd>lua require('flash').remote()<cr>";
       options = {
         desc = "Remote Flash";
       };

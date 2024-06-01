@@ -1,6 +1,9 @@
 {
   config = {
     opts = {
+      # Sets the register to use for the clipboard.
+      clipboard = "unnamedplus";
+
       # Enable relative line numbers
       number = true;
       relativenumber = true;

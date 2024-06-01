@@ -232,13 +232,63 @@
 
     {
       mode = "n";
-      key = "J";
-      action = "mzJ`z";
+      key = "jk";
+      #action = "mzJ`z";
+      action = "<Esc>";
+      options = {
+        desc = "Jump Back to Normal Mode";
+      };
+    }
+
+    {
+      mode = "n";
+      key = "JK";
+      #action = "mzJ`z";
+      action = "<cmd>:wq";
+      options = {
+        desc = "Save and Exit";
+      };
+    }
+
+    {
+      mode = "n";
+      key = "JJ";
+      #action = "mzJ`z";
+      action = "<cmd>:w";
+      options = {
+        desc = "Save";
+      };
+    }
+
+    {
+      mode = "n";
+      key = "KK";
+      #action = "mzJ`z";
+      action = "<cmd>qa!";
+      options = {
+        desc = "Undo Changes and Exit";
+      };
+    }
+
+    #   {
+    #     mode = "n";
+    #     key = "JK";
+    #     #action = "mzJ`z";
+    #     action = "<Esc>";
+    #     options = {
+    #       desc = "Allow cursor to stay in the same place after appending to current line ";
+    #     };
+    #   }
+
+    {
+      mode = "n";
+      key = "JK";
+      #action = "mzJ`z";
+      action = "<Esc>";
       options = {
         desc = "Allow cursor to stay in the same place after appending to current line ";
       };
     }
-
     {
       mode = "n";
       key = "<C-d>";
@@ -309,12 +359,12 @@
       action = "<Esc>";
     }
 
-    {
-      mode = "n";
-      key = "<leader>zz";
-      action = "<CMD> ZenMode | Pencil<CR>";
-      options = {desc = "Toggle writting mode";};
-    }
+    #  {
+    #    mode = "n";
+    #    key = "<leader>zz";
+    #    action = "<CMD> ZenMode | Pencil<CR>";
+    #    options = {desc = "Toggle writting mode";};
+    #  }
 
     {
       mode = "n";
