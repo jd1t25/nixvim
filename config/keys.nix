@@ -26,7 +26,6 @@
       key = "<leader>g";
       action = "+git";
     }
-
     {
       mode = "n";
       key = "<leader>u";
@@ -231,7 +230,7 @@
     }
 
     {
-      mode = "n";
+      mode = "i";
       key = "jk";
       #action = "mzJ`z";
       action = "<Esc>";
