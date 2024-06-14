@@ -233,7 +233,7 @@
       mode = "i";
       key = "jk";
       #action = "mzJ`z";
-      action = "<Esc>";
+      action = "<esc>";
       options = {
         desc = "Jump Back to Normal Mode";
       };
@@ -243,7 +243,7 @@
       mode = "n";
       key = "JK";
       #action = "mzJ`z";
-      action = "<cmd>:wq";
+      action = ":wq";
       options = {
         desc = "Save and Exit";
       };
@@ -253,7 +253,7 @@
       mode = "n";
       key = "JJ";
       #action = "mzJ`z";
-      action = "<cmd>:w";
+      action = ":w";
       options = {
         desc = "Save";
       };
@@ -263,7 +263,7 @@
       mode = "n";
       key = "KK";
       #action = "mzJ`z";
-      action = "<cmd>qa!";
+      action = ":qa!";
       options = {
         desc = "Undo Changes and Exit";
       };
@@ -283,7 +283,7 @@
       mode = "n";
       key = "JK";
       #action = "mzJ`z";
-      action = "<Esc>";
+      action = "<esc>";
       options = {
         desc = "Allow cursor to stay in the same place after appending to current line ";
       };
