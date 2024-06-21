@@ -166,7 +166,7 @@
     #
     {
       mode = "n";
-      key = "<C-s>";
+      key = "<S-j><S-k>";
       action = "<cmd>w<CR><esc>";
       options = {
         silent = true;
@@ -232,7 +232,7 @@
     {
       mode = "i";
       key = "jk";
-      action = "<ESC>";
+      action = "<Esc>";
       options = {
         desc = "Jump Back to Normal Mode";
         noremap = true;
