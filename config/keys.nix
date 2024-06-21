@@ -232,19 +232,20 @@
     {
       mode = "i";
       key = "jk";
-      #action = "mzJ`z";
       action = "<Esc>";
       options = {
         desc = "Jump Back to Normal Mode";
+        noremap = true;
       };
     }
 
     {
       mode = "n";
       key = "JK";
-      action = "<cmd>wq<cr><esc>";
+      action = "<cmd>wq<cr>";
       options = {
         desc = "Save and Exit";
+        noremap = true;
       };
     }
 
@@ -254,6 +255,7 @@
       action = "<cmd>w<cr><esc>";
       options = {
         desc = "Save";
+        noremap = true;
       };
     }
 
@@ -263,6 +265,7 @@
       action = "<cmd>qa!<cr><esc>";
       options = {
         desc = "Don't Save and Exit";
+        noremap = true;
       };
     }
 
