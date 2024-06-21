@@ -66,7 +66,7 @@
     # {
     #   mode = "n";
     #   key = "<leader><tab><tab>";
-    #   action = "<cmd>tabnew<cr>";
+    #   action = "<cmd>tabnew<CR>";
     #   options = {
     #     silent = true;
     #     desc = "New Tab";
@@ -76,7 +76,7 @@
     # {
     #   mode = "n";
     #   key = "<leader><tab>d";
-    #   action = "<cmd>tabclose<cr>";
+    #   action = "<cmd>tabclose<CR>";
     #   options = {
     #     silent = true;
     #     desc = "Close tab";
@@ -167,7 +167,7 @@
     {
       mode = "n";
       key = "<C-s>";
-      action = "<cmd>w<cr><esc>";
+      action = "<cmd>w<CR><esc>";
       options = {
         silent = true;
         desc = "Save file";
@@ -178,7 +178,7 @@
     # {
     #   mode = "n";
     #   key = "<leader>qq";
-    #   action = "<cmd>quitall<cr><esc>";
+    #   action = "<cmd>quitall<CR><esc>";
     #   options = {
     #     silent = true;
     #     desc = "Quit all";
@@ -188,7 +188,7 @@
     # {
     #   mode = "n";
     #   key = "<leader>ul";
-    #   action = ":lua ToggleLineNumber()<cr>";
+    #   action = ":lua ToggleLineNumber()<CR>";
     #   options = {
     #     silent = true;
     #     desc = "Toggle Line Numbers";
@@ -198,7 +198,7 @@
     # {
     #   mode = "n";
     #   key = "<leader>uL";
-    #   action = ":lua ToggleRelativeLineNumber()<cr>";
+    #   action = ":lua ToggleRelativeLineNumber()<CR>";
     #   options = {
     #     silent = true;
     #     desc = "Toggle Relative Line Numbers";
@@ -208,7 +208,7 @@
     # {
     #   mode = "n";
     #   key = "<leader>uw";
-    #   action = ":lua ToggleWrap()<cr>";
+    #   action = ":lua ToggleWrap()<CR>";
     #   options = {
     #     silent = true;
     #     desc = "Toggle Line Wrap";
@@ -242,7 +242,7 @@
     {
       mode = "n";
       key = "JK";
-      action = "<cmd>wq<cr>";
+      action = "<cmd>wq<CR>";
       options = {
         desc = "Save and Exit";
         noremap = true;
@@ -252,7 +252,7 @@
     {
       mode = "n";
       key = "JJ";
-      action = "<cmd>w<cr><esc>";
+      action = "<cmd>w<CR>";
       options = {
         desc = "Save";
         noremap = true;
@@ -262,7 +262,7 @@
     {
       mode = "n";
       key = "KK";
-      action = "<cmd>qa!<cr><esc>";
+      action = "<cmd>qa!<CR>";
       options = {
         desc = "Don't Save and Exit";
         noremap = true;
