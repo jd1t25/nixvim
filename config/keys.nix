@@ -242,7 +242,6 @@
     {
       mode = "n";
       key = "JK";
-      #action = "mzJ`z";
       action = "<cmd>wq<cr><esc>";
       options = {
         desc = "Save and Exit";
@@ -252,7 +251,6 @@
     {
       mode = "n";
       key = "JJ";
-      #action = "mzJ`z";
       action = "<cmd>w<cr><esc>";
       options = {
         desc = "Save";
@@ -262,7 +260,6 @@
     {
       mode = "n";
       key = "KK";
-      #action = "mzJ`z";
       action = "<cmd>qa!<cr><esc>";
       options = {
         desc = "Don't Save and Exit";
