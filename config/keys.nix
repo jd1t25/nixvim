@@ -228,46 +228,46 @@
     #   action = ":m '>-2<CR>gv=gv";
     #   options = {desc = "Use move command when line is highlighted ";};
     # }
-#
-#    {
-#      mode = "i";
-#      key = "jk";
-#      action = "<Esc>";
-#      options = {
-#        desc = "Jump Back to Normal Mode";
-#        noremap = true;
-#      };
-#    }
-#
-#    {
-#      mode = "n";
-#      key = "JK";
-#      action = "<cmd>wq<CR>";
-#      options = {
-#        desc = "Save and Exit";
-#        noremap = true;
-#      };
-#    }
-#
-#    {
-#      mode = "n";
-#      key = "JJ";
-#      action = "<cmd>w<CR>";
-#      options = {
-#        desc = "Save";
-#        noremap = true;
-#      };
-#    }
-#
-#    {
-#      mode = "n";
-#      key = "KK";
-#      action = "<cmd>qa!<CR>";
-#      options = {
-#        desc = "Don't Save and Exit";
-#        noremap = true;
-#      };
-#    }
+
+    {
+      mode = "i";
+      key = "jk";
+      action = "<Esc>";
+      options = {
+        desc = "Jump Back to Normal Mode";
+        noremap = true;
+      };
+    }
+
+    {
+      mode = "n";
+      key = "<S-jk>";
+      action = "<cmd>wq<CR>";
+      options = {
+        desc = "Save and Exit";
+        noremap = true;
+      };
+    }
+
+    {
+      mode = "n";
+      key = "<S-jj>";
+      action = "<cmd>w<CR>";
+      options = {
+        desc = "Save";
+        noremap = true;
+      };
+    }
+
+    {
+      mode = "n";
+      key = "<S-kk>";
+      action = "<cmd>qa!<CR>";
+      options = {
+        desc = "Don't Save and Exit";
+        noremap = true;
+      };
+    }
 
     #   {
     #     mode = "n";
@@ -429,9 +429,7 @@
     #   }
   ];
   extraConfigVim = ''
-    nnoremap jk <Esc>
-    nnoremap JJ <cmd>w<CR>
-    nnoremap JK <cmd>qa<CR>
+    nnoremap jk <esc>
     '';
   #  extraConfigLua = ''
   #   function ToggleLineNumber()
