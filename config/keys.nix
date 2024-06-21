@@ -249,15 +249,15 @@
       };
     }
 
-    {
-      mode = "n";
-      key = "JJ";
-      action = "<cmd>:w<CR>";
-      options = {
-        desc = "Save";
-        noremap = true;
-      };
-    }
+   # {
+   #   mode = "n";
+   #   key = "JJ";
+   #   action = "<cmd>:w<CR>";
+   #   options = {
+   #     desc = "Save";
+   #     noremap = true;
+   #   };
+   # }
 
     {
       mode = "n";
