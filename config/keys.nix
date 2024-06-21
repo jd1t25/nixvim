@@ -232,7 +232,7 @@
     {
       mode = "i";
       key = "jk";
-      action = "<Esc>";
+      action = "<ESC>";
       options = {
         desc = "Jump Back to Normal Mode";
         noremap = true;
@@ -241,8 +241,8 @@
 
     {
       mode = "n";
-      key = "<S-jk>";
-      action = "<cmd>wq<CR>";
+      key = "JK";
+      action = "<cmd>:wq<cr>";
       options = {
         desc = "Save and Exit";
         noremap = true;
@@ -251,8 +251,8 @@
 
     {
       mode = "n";
-      key = "<S-jj>";
-      action = "<cmd>w<CR>";
+      key = "JJ";
+      action = "<cmd>:w<CR>";
       options = {
         desc = "Save";
         noremap = true;
@@ -261,8 +261,8 @@
 
     {
       mode = "n";
-      key = "<S-kk>";
-      action = "<cmd>qa!<CR>";
+      key = "KK";
+      action = "<cmd>:qa!<CR>";
       options = {
         desc = "Don't Save and Exit";
         noremap = true;
@@ -429,7 +429,7 @@
     #   }
   ];
   extraConfigVim = ''
-    nnoremap jk <esc>
+    nnoremap jk <ESC>
     '';
   #  extraConfigLua = ''
   #   function ToggleLineNumber()
