@@ -24,6 +24,7 @@
       # Enable incremental searching
       hlsearch = true;
       incsearch = true;
+      inccommand = "split";
 
       # Enable text wrap
       wrap = true;
@@ -35,6 +36,8 @@
       # Enable mouse mode
       mouse = "a"; # Mouse
 
+      pumheight = 10;  # pop up menu height
+
       # Enable ignorecase + smartcase for better searching
       ignorecase = true;
       smartcase = true; # Don't ignore case with capitals
@@ -42,7 +45,7 @@
       grepformat = "%f:%l:%c:%m";
 
       # Decrease updatetime
-      updatetime = 50; # faster completion (4000ms default)
+      updatetime = 250; # faster completion (4000ms default)
 
       # Set completeopt to have a better completion experience
       completeopt = ["menuone" "noselect" "noinsert"]; # mostly just for cmp
@@ -56,7 +59,7 @@
       termguicolors = true;
 
       # Enable the sign column to prevent the screen from jumping
-      # signcolumn = "yes";
+      signcolumn = "yes";
 
       # Enable cursor line highlight
       cursorline = true; # Highlight the line where the cursor is located
@@ -76,17 +79,22 @@
       # colorcolumn = "80";
 
       # Reduce which-key timeout to 10ms
-      timeoutlen = 10;
+      timeout = true;
+      timeoutlen = 300;
 
       # Set encoding type
       encoding = "utf-8";
       fileencoding = "utf-8";
 
       # More space in the neovim command line for displaying messages
-      cmdheight = 0;
+      cmdheight = 1;
 
       # We don't need to see things like INSERT anymore
       showmode = false;
+
+      list = true   # sets neovim display whitespace
+
+      # Shows different symbols for whitespace
     };
   };
 }

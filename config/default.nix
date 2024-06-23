@@ -4,8 +4,8 @@
   ...
 }: {
   imports = [
-    #./sets.nix
-    #./highlight.nix
+    ./options.nix
+    ./highlight.nix
     ./keys.nix
 
   ];
