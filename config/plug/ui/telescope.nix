@@ -44,7 +44,7 @@
           desc = "Find project files";
         };
       };
-      "<leader>fr" = {
+      "<leader>fg" = {
         action = "live_grep, {}";
         options = {
           desc = "Find text";
@@ -56,7 +56,7 @@
           desc = "Resume";
         };
       };
-      "<leader>fg" = {
+      "<leader>fo" = {
         action = "oldfiles, {}";
         options = {
           desc = "Recent";
@@ -116,7 +116,7 @@
           desc = "Workspace diagnostics";
         };
       };
-      "<leader>sh" = {
+      "<leader>fh" = {
         action = "help_tags, {}";
         options = {
           desc = "Help pages";
@@ -134,7 +134,7 @@
           desc = "Keymaps";
         };
       };
-      "<leader>sM" = {
+      "<leader>fM" = {
         action = "man_pages, {}";
         options = {
           desc = "Man pages";
