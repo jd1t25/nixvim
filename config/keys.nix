@@ -94,13 +94,13 @@
       mode = "n";
       key = "j";
       action = "v:count == 0 ? 'gj' : 'j'";
-      options = {desc = "Dealing with word wrap"; expr = true};
+      options = {desc = "Dealing with word wrap"; expr = true;};
     }
     {
       mode = "n";
       key = "k";
       action = "v:count == 0 ? 'gk' : 'k'";
-      options = {desc = "Dealing with word wrap"; expr = true};
+      options = {desc = "Dealing with word wrap"; expr = true;};
     }
   ];
  # extraConfigVim = ''
