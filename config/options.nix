@@ -92,9 +92,7 @@
       # We don't need to see things like INSERT anymore
       showmode = false;
 
-      list = true   # sets neovim display whitespace
-
-      # Shows different symbols for whitespace
+      list = true;   # sets neovim display whitespace
     };
   };
 }
