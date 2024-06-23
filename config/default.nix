@@ -10,7 +10,7 @@
     ./plug/colorscheme/colorscheme.nix
 
     ./plug/completion/cmp.nix
-    ./plug/completion/schemastore.nix
+    #./plug/completion/schemastore.nix
 
     ./plug/git/gitsigns.nix
     ./plug/git/lazygit.nix
