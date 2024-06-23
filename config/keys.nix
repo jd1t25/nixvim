@@ -69,13 +69,13 @@
     {
       mode = ["n" "v"];
       key = "dd";
-      action = '"_dd';
+      action = "\"_dd";
       options = {desc = "Delete to Void";};
     }
     {
       mode = ["n" "v"];
       key = "c";
-      action = '"_c';
+      action = "\"_c";
       options = {desc = "Cut to void";};
     }
     {
