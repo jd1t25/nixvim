@@ -44,6 +44,7 @@
         desc = "Save the file";
         noremap = true;
       };
+        }
         {
       mode = [ "n" "i"];
       key = "KK";
