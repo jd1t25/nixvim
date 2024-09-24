@@ -3,56 +3,64 @@
   lib,
   ...
 }: {
+  # Import all your configuration modules here
   imports = [
-    ./options.nix
-    ./highlight.nix
-    ./keys.nix
-    ./plug/colorscheme/colorscheme.nix
+    ./core/options.nix
+    ./core/keys.nix
+    ./core/sets.nix
 
-    ./plug/completion/cmp.nix
-    #./plug/completion/schemastore.nix
+    ./plug/colorscheme.nix
+    ./core/highlight.nix
 
-    ./plug/git/gitsigns.nix
-    ./plug/git/lazygit.nix
-    ./plug/git/worktree.nix
+    ./plug/cmp.nix # Cmp
+    ./plug/lspkind.nix # Lspkind
 
-    ./plug/lsp/conform.nix
-    ./plug/lsp/fidget.nix
-    ./plug/lsp/hlchunk.nix
-    ./plug/lsp/lsp.nix
-    ./plug/lsp/lspsaga.nix
-    ./plug/lsp/none-ls.nix
-    ./plug/lsp/trouble.nix
+    ./plug/lsp.nix # LSP
+    ./plug/luasnip.nix # luasnip
+    ./plug/fidget.nix # Fidget
+    ./plug/nonels.nix # Nonels
+    ./plug/lspsaga.nix # lspsaga
+    ./plug/trouble.nix # Trouble
 
-    ./plug/snippets/luasnip.nix
+    ./plug/gitblame.nix # GitBlame
+    ./plug/gitsigns.nix # gitsigns
+    ./plug/gitlinker.nix # gitlinker
 
-    ./plug/treesitter/treesitter-textobjects.nix
-    ./plug/treesitter/treesitter.nix
+    ./plug/treesitter.nix # treesitter
+    ./plug/treesittercontext.nix
+    ./plug/treesittertextobjects.nix
 
-    ./plug/ui/bufferline.nix
-    ./plug/ui/indent-blankline.nix
-    ./plug/ui/telescope.nix
+    ./plug/alpha.nix
+    ./plug/dressing.nvim
+    ./plug/indentblankline.nix
+    #./plug/precognition.nix
+    ./plug/telescope.nix
+    ./plug/nvimcolorizer.nix
+    ./plug/comment.nix
+    ./plug/commentbox.nix
 
-    #./plug/utils/harpoon.nix
-    ./plug/utils/comment.nix
-    ./plug/utils/dap.nix
-    #./plug/utils/grapple.nix
-    #./plug/utils/hardtime.nix
-    ./plug/utils/illuminate.nix
-    ./plug/utils/mini.nix
-    ./plug/utils/nvim-autopairs.nix
-    #./plug/utils/obsidian.nix
-    ./plug/utils/oil.nix
-    ./plug/utils/ufo.nix
-    ./plug/utils/undotree.nix
-    ./plug/utils/whichkey.nix
-    ./plug/utils/yaml-companion.nix
+    ./plug/hop.nix
+    ./plug/illuminate.nix
+    ./plug/ufo.nix
+    ./plug/undotree.nix
+    ./plug/whichkey.nix
 
+    ./plug/conform.nix # Autosave
+    ./plug/bufferline.nix # Bufferline
   ];
   options = {
     theme = lib.mkOption {
-      default = "paradise";
-      type = lib.types.enum ["paradise" "decay" "mountain" "tokyonight" "everforest" "everblush" "jellybeans" "aquarium" "gruvbox"];
+      default = lib.mkDefault "paradise";
+      type = lib.types.enum [
+        "paradise"
+      ];
+    };
+    assistant = lib.mkOption {
+      default = "none";
+      type = lib.types.enum [
+        "copilot"
+        "none"
+      ];
     };
   };
   config = {
