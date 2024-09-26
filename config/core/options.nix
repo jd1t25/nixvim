@@ -1,9 +1,8 @@
 {
   config = {
     opts = {
-      breakindent = true;              # Enable smart indenting 
-      clipboard = "unnamedplus";       # Sets the register to use for the clipboard.
-
+      breakindent = true; # Enable smart indenting
+      clipboard = "unnamedplus"; # Sets the register to use for the clipboard.
 
       # Enable relative line numbers
       number = true;
@@ -16,9 +15,9 @@
       expandtab = true;
 
       # Enable auto indenting and set it to spaces
+      autoindent = true;
       smartindent = true;
       shiftwidth = 2;
-
 
       # Enable incremental searching
       hlsearch = true;
@@ -35,7 +34,7 @@
       # Enable mouse mode
       mouse = "a"; # Mouse
 
-      pumheight = 10;  # pop up menu height
+      pumheight = 10; # pop up menu height
 
       # Enable ignorecase + smartcase for better searching
       ignorecase = true;
@@ -91,7 +90,7 @@
       # We don't need to see things like INSERT anymore
       showmode = true;
 
-      list = true;   # sets neovim display whitespace
+      list = true; # sets neovim display whitespace
     };
   };
 }
