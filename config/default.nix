@@ -47,6 +47,8 @@
 
     ./plug/conform.nix # Autosave
     ./plug/bufferline.nix # Bufferline
+
+    ./plug/surround.nix
   ];
   options = {
     theme = lib.mkOption {
