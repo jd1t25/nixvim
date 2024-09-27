@@ -7,7 +7,6 @@
     settings = {
       indent = {
         enable = true;
-        disable = ["python"];
       };
       highlight = {
         enable = true;
@@ -25,6 +24,12 @@
 
     parser_config.liquidsoap = {
       filetype = "liquidsoap",
+    }
+
+    require'nvim-treesitter.configs'.setup {
+       indent = {
+        disable = { "python" },
+    }
     }
   '';
 }
