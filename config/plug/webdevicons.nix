@@ -1,1 +1,1 @@
-{plugins.web-devicons = true;}
+{plugins.web-devicons.enable = true;}

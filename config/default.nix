@@ -49,6 +49,8 @@
     ./plug/bufferline.nix # Bufferline
 
     ./plug/surround.nix
+    ./plug/webdevicons.nix
+    ./plug/autopairs.nix
   ];
   options = {
     theme = lib.mkOption {
