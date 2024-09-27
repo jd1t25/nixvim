@@ -1,5 +1,4 @@
-{ pkgs, ... }:
-{
+{pkgs, ...}: {
   filetype.extension.liq = "liquidsoap";
 
   plugins.treesitter = {
@@ -8,6 +7,7 @@
     settings = {
       indent = {
         enable = true;
+        disable = ["python"];
       };
       highlight = {
         enable = true;
