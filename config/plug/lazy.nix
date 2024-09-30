@@ -3,13 +3,14 @@ _: {
     enable = true;
     plugins = [
       {
-        repo = "barrett-ruth/live-server.nvim"; # Specify the plugin repository
-        enabled = true;
-        cmd = [
-          "LiveServerStart"
-          "LiveServerStop"
-        ]; # List of commands for lazy loading
-        config = true;
+        "barrett-ruth/live-server.nvim" = {
+          enabled = true;
+          cmd = [
+            "LiveServerStart"
+            "LiveServerStop"
+          ]; # List of commands for lazy loading
+          config = true;
+        };
       }
     ];
   };
