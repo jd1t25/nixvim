@@ -51,7 +51,7 @@
     ./plug/surround.nix
     ./plug/webdevicons.nix
     ./plug/autopairs.nix
-    ./plug/lazy.nix
+    # ./plug/lazy.nix
     # ./plug/live-server.nix
   ];
   options = {
