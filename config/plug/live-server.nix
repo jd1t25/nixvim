@@ -15,7 +15,7 @@ in {
         owner = "barrett-ruth";
         repo = "live-server.nvim";
         rev = "5fc8abb";
-        hash = lib.fakeHash;
+        hash = "sha256-gZDG9PuzRpRJGPkkXiiBZ5w+ZUglMJA08o/ij54ME8o=";
       };
       buildInputs = [pkgs.nodejs pkgs.pnpm]; # Ensure pnpm is available
       installPhase = ''
