@@ -5,11 +5,12 @@
 }: let
   # inherit (lib) mkIf;
   pname = "live-server";
+  version = "0.1.0";
   # live_server_enable = true;
 in {
   extraPlugins = with pkgs.vimUtils; [
     (buildVimPlugin {
-      inherit pname;
+      inherit pname version;
       src = pkgs.fetchFromGitHub {
         owner = "barrett-ruth";
         repo = "live-server.nvim";
