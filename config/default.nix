@@ -51,6 +51,7 @@
     ./plug/surround.nix
     ./plug/webdevicons.nix
     ./plug/autopairs.nix
+    ./plug/live-server.nix
   ];
   options = {
     theme = lib.mkOption {
